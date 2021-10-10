@@ -247,7 +247,7 @@
 }
 
 .about .about-content .right .text {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -259,7 +259,7 @@
 .about .about-content .right p {
   text-align: justify; 
   padding: 15px 0;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .about .about-content .right a {
@@ -277,7 +277,6 @@
 
 .about .about-content .right a:hover {
   background-color: rgb(14, 141, 158 );
-
 }
 
 
@@ -433,17 +432,18 @@
 
 @media (max-width: 979px){
   .max-width{
-    padding: 0 100px;
+    padding: 0 30px;
+    max-width: 800px;
   }
   .menu-btn{
     display: block;
     z-index: 999;
     font-size: 32px;
   }
+
   .menu-btn .icofont-navigation-menu.active:before{
     color: rgb(31 218 218);
   }
-
   .navbar .menu {
     position: fixed;
     height: 100vh;
@@ -458,11 +458,9 @@
   .navbar .menu.active {
     left: 0;
   }
-
   .navbar .menuIcons {
     display: none;
   }
-
   .navbar .menu li {
     display: block;
   }
@@ -477,29 +475,29 @@
     padding: 12px 15px;
     margin-top: 10px;
   }
+
+  .about .tittle {
+    margin: 30px;
+  }
+
+  .about .about-content {
+    justify-content: center;
+  }
+
   .about .about-content .right {
-    padding: 0 0 0 2vh;
+    padding: 1vh 1vh 1vh 1vh;
     width: 100%;
   }
   .about .about-content .left {
-    padding: 0 0 0 2vh;
-    width: 100%;
+    padding: 1vh 1vh 1vh 1vh;
+    width: 75%;
   }
-
- 
-  .max-width {
-    max-width: 800px;
-  }
-
   .about .about-content .left img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 6px;
   }
-
-
-
 }
 
 
