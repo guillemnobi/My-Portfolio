@@ -8,22 +8,30 @@
   <link rel="stylesheet" href="style.css">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <!-- https://icofont.com/icons -->
-  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
-</head>
-<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
+  <!-- inspiración en. https://www.youtube.com/watch?v=tcskp-ncN0I&t=1066s -->
+</head>
+
+<body>
   <!-- Navbar Section Starts  -->
-  
+  <div class="scroll-up-btn">
+    <i class="icofont-rounded-up"></i>
+  </div>
   <nav class="navbar">
     <div class="max-width">
-      <div class="logo">Guillem.<span>Nobi.</span></div>
+      <div class="logo"><a href="#">Guillem.<span>Nobi.</span></a></div>
       <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#teams">Teams</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <ul class="menuIcons">
         <li><a href="https://twitter.com/LeNobi01"><i class="icofont-twitter"></i></a></li>
@@ -36,8 +44,7 @@
       </div>
     </div>
   </nav>
-
-   <!-- Home Section Starts  -->
+  <!-- Home Section Starts  -->
 
   <section class="home" id="home">
     <div class="max-width">
@@ -49,12 +56,11 @@
       </div>
     </div>
   </section>  
-
   <!-- about section start -->
 
   <section class="about" id="about">
     <div class="max-width">
-      <h2 class="tittle"></h2><br>
+      <h2 class="tittle">About me</h2><br>
       <div class="about-content">
         <div class="column left">
           <img src="/MODULE 1 HTML CSS/Portfolio/assets/img/about.jpg" alt="">
@@ -66,8 +72,7 @@
         </div>
       </div>
     </div>
-
-      <!-- services section start -->
+  <!-- services section start -->
 
   <section class="services" id="services">
     <div class="max-width">
@@ -82,7 +87,7 @@
         </div>
         <div class="card">
           <div class="box">
-            <i class="icofont-barcode"></i>
+            <i class="icofont-chart-flow-1"></i>
             <div class="text">Advertising</div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio necessitatibus, natus doloribus ducimus mollitia similique?</p>
           </div>
@@ -95,10 +100,180 @@
           </div>
         </div>
        </div>
-    </div>
- 
-      
+    </div>      
   </section>
+  <!-- skills section start -->
+
+  <section class="skills" id="skills">
+    <div class="max-width">
+      <h2 class="tittle">My skills</h2>
+      <div class="skills-content">
+        <div class="column left">
+          <div class="text">My creative skills & experiences.</div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, vero? Enim, sed odio sit quidem iure non rem totam provident recusandae, dignissimos tempora officiis at, perspiciatis dolore quos doloremque quae commodi assumenda similique neque incidunt blanditiis nam. Dolor nisi vero omnis ipsum? Debitis, ea laborum laudantium numquam ducimus, quibusdam id voluptatibus recusandae, exercitationem nam consequatur rem ex impedit beatae ipsam?</p>
+            <a href="#">Read more</a>
+        </div>
+        <div class="column right">
+          <div class="bars">
+            <div class="info">
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+            <div class="line html"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>CSS</span>
+              <span>90%</span>
+            </div>
+            <div class="line css"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>JAVASCRIPT</span>
+              <span>70%</span>
+            </div>
+            <div class="line js"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>REACT</span>
+              <span>50%</span>
+            </div>
+            <div class="line react"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>PHP</span>
+              <span>20%</span>
+            </div>
+            <div class="line php"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>MySQL</span>
+              <span>20%</span>
+            </div>
+            <div class="line mysql"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>RUBY</span>
+              <span>10%</span>
+            </div>
+            <div class="line ruby"></div>
+          </div>
+        </div>
+    </div>
+  </section><hr>
+  <!-- teams section start -->
+
+  <section class="teams" id="teams">
+    <div class="max-width">
+      <h2 class="tittle">My team</h2>
+      <div class="carousel owl-carousel">
+        <div class="card">
+          <div class="box">
+            <img src="/MODULE 1 HTML CSS/Portfolio/assets/img/people/1.jpg" alt="">
+            <div class="text">1 Someone name</div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="/MODULE 1 HTML CSS/Portfolio/assets/img/people/2.jpg" alt="">
+            <div class="text">2 Someone name</div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="/MODULE 1 HTML CSS/Portfolio/assets/img/people/3.jpg" alt="">
+            <div class="text">3 Someone name</div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="/MODULE 1 HTML CSS/Portfolio/assets/img/people/4.jpg" alt="">
+            <div class="text">4 Someone name</div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="card"> 
+          <div class="box">
+            <img src="/MODULE 1 HTML CSS/Portfolio/assets/img/people/5.jpg" alt="">
+            <div class="text">5   Someone name</div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- contact section start -->
+  
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="tittle">Contact me</h2>
+      <div class="contact-content">
+        <div class="column left">
+          <div class="text">Get in touch</div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, consectetur. Et, nostrum harum commodi necessitatibus expedita enim magnam quam cum.</p>
+          <div class="icons">
+            <div class="row">
+              <i class="icofont-ui-user"></i>
+              <div class="info">
+                <div class="head">Name</div>
+                <div class="sub-title">Guillem Nobi</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="icofont-direction-sign"></i>
+              <div class="info">
+                <div class="head">Adress</div>
+                <div class="sub-title">Barcelona</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="icofont-send-mail"></i>
+              <div class="info">
+                <div class="head">Email</div>
+                <div class="sub-title">@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column right">
+          <div class="text">Message me
+            <form action="#">
+              <div class="fields">
+                <div class="field name">
+                <input type="text" placeholder="Name">
+                </div>
+                <div class="field email">
+                  <input type="email" placeholder="Email">
+                </div>
+                <div class="field">
+                  <input type="text" placeholder="Subject">
+                </div>
+                <div class="field textarea">
+                  <textarea cols="30" rows="10" placeholder="Describe your project.."></textarea>
+                </div>
+                <div class="button">
+                  <button type="submit">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- footer section start -->
+
+  <footer>
+    <span>Created By <a href="#">Guillem Nobi</a></span> | <span>2021 All rights reserved.</span> 
+    </footer>
 
 
 
