@@ -24,7 +24,22 @@ $(document).ready(function(){
   });
 
   // typing animation script
+  var typedHome = new Typed(".typing1", {
+    strings: ["FrontEnd Web Developer"],
+    typeSpeed: 120,
+    backSpeed: 60,
+    loop: true,
+  })
 
+  var typedContact = new Typed('.typing2', {
+    strings: ['Type In your project...'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    attr: 'placeholder',
+    bindInputFocusEvents: true,
+    loop: true
+  });
+    
 
   // owl carousel script
   
