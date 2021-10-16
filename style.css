@@ -41,6 +41,32 @@ html {
   justify-content: space-between;
 }
 
+.navbar .menuIcons li #linkedin, #facebook, #twitter {
+  stroke-width: 0.1px;
+}
+
+.navbar .menuIcons li svg {
+  height: 30px;
+  width: 30px;
+  stroke: white;
+  font-size: 22px;
+  font-weight:500;
+  margin-left: 10px;
+}
+
+.navbar .menuIcons li:hover svg{
+  stroke: blue;
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(0%);
+  } to {
+    transform: translateY(30%);
+  }
+}
+
 .navbar .logo {
   font-size: 35px;
   font-weight: 600;
@@ -85,18 +111,6 @@ html {
 }
 
 .navbar .menu li :hover{
-  color: rgb(16 224 224);
-}
-
-
-.navbar .menuIcons li a {
-  color: #FFFAF0;
-  font-size: 22px;
-  font-weight:500;
-  margin-left: 10px;
-}
-
-.navbar .menuIcons li :hover{
   color: rgb(16 224 224);
 }
 
@@ -150,15 +164,26 @@ html {
   position: fixed;
   z-index: -1;
   /* eliminar esto si no podemos seguir youtube */
-
-
-
-
 }
 
 .home .max-width {
   margin: 300px auto auto 100px;
 }
+
+.home .home-content {
+  animation: fadeDown 3s forwards;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%)
+  } to {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+}
+
 
 .home .home-content .text-1 {
   font-size: 30px;
@@ -240,8 +265,8 @@ section .tittle::before {
   background-color: rgb(14, 141, 158);
 }
 
-section .tittle::after {
-  /* content:"";
+/* section .tittle::after {
+  content:"";
   position: absolute;
   bottom: -7px; 
   left: 50%;
@@ -249,8 +274,8 @@ section .tittle::after {
   font-weight: 500;
   Padding: 0 3px;
   background-color: white;
-  transform: translateX(-50%); */
-}
+  transform: translateX(-50%);
+} */
 
 .about .about-content,
 .services .serv-content {
