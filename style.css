@@ -156,7 +156,8 @@ html {
   width: 100%;
   color: white;
   min-height: 500px;
-  font-family: "Dank Mono", ui-monospace, monospace;
+  /* font-family: "Dank Mono", ui-monospace, monospace; */
+  font-family: 'Ubuntu', sans-serif;
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -231,7 +232,8 @@ html {
 /* About Section Styling */
 
 .about, .skills, .teams, .contact {
-  font-family: "Dank Mono", ui-monospace, monospace;
+  /* font-family: "Dank Mono", ui-monospace, monospace; */
+  font-family: 'Ubuntu', sans-serif;
   background-color: white;
 }
 
@@ -245,24 +247,6 @@ html {
 .about .max-width {
   margin-left: 0;
   padding: 50px 75px;
-}
-
-section .tittle {
-  position: relative;
-  font-family: "Dank Mono", ui-monospace, monospace;
-  transform: translateX(50%);
-  font-size: 30px;
-
-}
-
-section .tittle::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  transform: translateX(-5%);
-  width: 400px;
-  height: 3px;
-  background-color: rgb(14, 141, 158);
 }
 
 /* section .tittle::after {
@@ -340,10 +324,9 @@ section .tittle::before {
 
 section .tittle {
   position: relative;
-  font-family: "Dank Mono", ui-monospace, monospace;
-  transform: translateX(50%);
+  font-family: 'Ubuntu', sans-serif;
   font-size: 30px;
-}
+  }
 
 section .tittle::before {
   content: "";

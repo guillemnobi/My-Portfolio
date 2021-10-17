@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <!-- https://icofont.com/icons -->
@@ -15,8 +16,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
   <!-- inspiración en. https://www.youtube.com/watch?v=tcskp-ncN0I&t=1066s -->
-  <!-- Pendientes: Letra principal, color del carousel,titulos de sección -->
-  <!-- En fase de prueba: iconos redes sociales, mejorar animacion y encontar un svg mas parecido en los 4 -->
+  <!-- Pendientes: color del carousel, colores de fondo, elegir otro carousel falta,  botton scroll down junto a animación -->
+  <!-- En fase de prueba: iconos redes sociales, encontar un svg mas parecido en los 4 -->
 
 </head>
 
@@ -68,12 +69,12 @@
 
   <section class="about" id="about">
     <div class="max-width">
-      <h2 class="tittle">About me</h2><br>
+      <div data-aos="zoom-in-left" data-aos-duration="1000"><h2 class="tittle">About me</h2></div><br>
       <div class="about-content">
         <div class="column left">
           <img src="/MODULE 1 HTML CSS/Portfolio/assets/img/about_opt.jpg" alt="">
         </div>
-        <div class="column right">
+        <div data-aos="zoom-out-up" data-aos-duration="1000" class="column right">
           <div class="text">Hi! I'm <span>Guillem Nobi</span></div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsam distinctio non reiciendis molestias, tempora, ut at iusto in autem porro, doloremque nostrum cumque harum quibusdam nemo. Impedit labore obcaecati iusto rerum, illum possimus est a, voluptates ad, vel tenetur cumque dolor commodi necessitatibus. Ea perferendis asperiores quibusdam, explicabo sint tempore minima quia minus? Fugit atque adipisci recusandae reiciendis provident.</p>
           <a href="#">Download CV</a>
@@ -84,7 +85,7 @@
 
   <section class="services" id="services">
     <div class="max-width">
-      <h2 class="tittle">My services</h2><br>
+      <div data-aos="zoom-in-left" data-aos-duration="1000"><h2 class="tittle">My services</h2></div><br>
       <div class="serv-content">
         <div class="card">
           <div class="box">
@@ -114,9 +115,9 @@
 
   <section class="skills" id="skills">
     <div class="max-width">
-      <h2 class="tittle">My skills</h2>
+      <div data-aos="zoom-in-left" data-aos-duration="1000"><h2 class="tittle">My skills</h2></div>
       <div class="skills-content">
-        <div class="column left">
+        <div data-aos="zoom-out-up" data-aos-duration="1000" class="column left">
           <div class="text">My creative skills & experiences.</div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, vero? Enim, sed odio sit quidem iure non rem totam provident recusandae, dignissimos tempora officiis at, perspiciatis dolore quos doloremque quae commodi assumenda similique neque incidunt blanditiis nam. Dolor nisi vero omnis ipsum? Debitis, ea laborum laudantium numquam ducimus, quibusdam id voluptatibus recusandae, exercitationem nam consequatur rem ex impedit beatae ipsam?</p>
             <a href="#">Read more</a>
@@ -178,7 +179,7 @@
 
   <section class="teams" id="teams">
     <div class="max-width">
-      <h2 class="tittle">My team</h2>
+      <div data-aos="zoom-in-left" data-aos-duration="1000"><h2 class="tittle">My team</h2></div>
       <div class="carousel owl-carousel">
         <div class="card">
           <div class="box">
@@ -222,9 +223,9 @@
   
   <section class="contact" id="contact">
     <div class="max-width">
-      <h2 class="tittle">Contact me</h2>
+      <div data-aos="zoom-in-left" data-aos-duration="1000"><h2 class="tittle">Contact me</h2></div>
       <div class="contact-content">
-        <div class="column left">
+        <div data-aos="zoom-out-up" data-aos-duration="1000"  class="column left">
           <div class="text">Get in touch</div>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, consectetur. Et, nostrum harum commodi necessitatibus expedita enim magnam quam cum.</p>
           <div class="icons">
@@ -285,7 +286,10 @@
 
 
 
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
