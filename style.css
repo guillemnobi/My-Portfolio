@@ -55,15 +55,15 @@ html {
 }
 
 .navbar .menuIcons li:hover svg{
-  stroke: blue;
-  animation: fadeInUp 1s forwards;
+  stroke: orangered;
+  animation: mySpinner 1s forwards;
 }
 
-@keyframes fadeInUp {
+@keyframes mySpinner {
   from {
-    transform: translateY(0%);
+    transform: rotate(0deg);
   } to {
-    transform: translateY(30%);
+    transform: rotate(360deg);
   }
 }
 
